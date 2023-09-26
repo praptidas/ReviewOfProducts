@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>option page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="option.css">
+    
+</head>
+<body>
+    <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="card swiper-slide">
+                <div class="card_image">
+                    <!--<div class="card_image">
+                        <a href="your_page_url_here" target="_blank">
+                            <img src="dress.jpg" alt="Dress">
+                        </a>
+                    </div>-->
+                    <img src="dress.jpg" alt="">
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Dresses</span>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card_image">
+                    <img src="food.jpg" alt="">
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Food</span>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card_image">
+                    <img src="medicine.jpg" alt="">
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Medicine</span>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card_image">
+                    <img src="electronics.jpg" alt="">
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Electronics</span>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card_image">
+                    <img src="baby.png" alt="">
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Baby Products</span>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card_image">
+                    <img src="beautyproducts.jpg" alt="">
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Beauty Products</span>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card_image">
+                    <img src="footwear.gif" alt="">
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Footwear</span>
+                </div>
+            </div>
+            
+            <div class="card swiper-slide">
+                <div class="card_image">
+                    <img src="bags.jpg" alt="">
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Bags</span>
+                </div>
+            </div>
+         
+            <div class="card swiper-slide">
+                <div class="card_image">
+                    <img src="mobile.webp" alt="">
+                </div>
+                <div class="card_content">
+                    <span class="card_title">&nbsp; &nbsp; &nbsp; Mobile <br>Accessories</span>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var swiper=new Swiper(".mySwiper",{
+            loop: true,
+            autoplay: {
+            delay: 2000, // Adjust autoplay delay as needed (in milliseconds)
+            disableOnInteraction: false, // Allow autoplay to continue even if the user interacts with the slider
+            },
+            autoplayTimeout: 500,
+            autoplayHoverPause: true,
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect:{
+                rotate: 0,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows : false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    });
+    </script>
+</body>
+</html>

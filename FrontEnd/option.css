@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #cceeee;
+}
+element.style{
+    width: 230px;
+}
+div.swipper{
+    width: 100%;
+}
+div.swiper-wrapper{
+    width: 100%;
+    height: 35em;
+    display: flex;
+    align-items: center;
+}
+div.card{
+    width: 250px !important;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgba(0,0,0,.2);
+    /*padding: 2em 1em;*/
+    padding :10px;
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2em;
+}
+
+.swiper-slide:not(.swiper-slide-active){
+    filter: blur(1px);
+}
+.card_image{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 4px solid #010101;
+    /*padding-top: 10px;*/
+    padding: 3px;
+    margin-bottom: 2em;
+}
+
+.card_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.card_content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card_title{
+    font-size: 1.5em;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+
+}
+/* Remove margins and padding from the swiper container and slides */
+/*.swiper-container {
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-slide {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Set a consistent width for all slides 
+}*/
+
